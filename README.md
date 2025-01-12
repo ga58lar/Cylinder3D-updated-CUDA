@@ -1,3 +1,14 @@
+# GENERAL
+
+Use the Docker environment to use the segmentation network.  
+Download the weights from the origin of the fork (not the official Cylinder3D repository).  
+Build `./docker/build.sh` and run `./docker/run.sh /path/to/data/to/be/mounted` the Docker.  
+
+Inside the container, test the code with:  
+```
+python demo_folder.py --demo-folder YOUR_FOLDER --save-folder YOUR_SAVE_FOLDER --demo-label-folder YOUR_LABEL_FOLDER
+```
+
 ## Spconv
 Some issues can occur with newer versions of Spconv 2.x. If you get an error, that precompiled functions are not found, make sure you do not have duplicates of the package cumm-[cuda version]. If issues persists, spconv version 2.2.3 or lower is recommended.
 
